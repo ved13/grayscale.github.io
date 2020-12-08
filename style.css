@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --logo-font: "Big Shoulders Stencil Text", cursive;
+  --primary-font: "Poppins", sans-serif;
+}
+
+/* navigation css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+  z-index: 10;
+}
+
+.nav-left {
+  z-index: 10;
+}
+.nav-right {
+  z-index: 10;
+}
+.logo {
+  color: rgb(255 255 255 / 44%);
+  font-family: var(--logo-font);
+  font-size: 1.8rem;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items li {
+  margin: 20px;
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: rgb(222 222 222 / 82%);
+  cursor: pointer;
+}
+
+
+.bg-image {
+  position: relative;
+  background-image: url(./images/bg-masthead.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 650px;
+
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-overlay {
+  position: absolute;
+  background: linear-gradient(180deg, #ffffff -78%, black 70%);
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 986px) {
+  .bg-image {
+    height: 720px;
+  }
+  .navbar {
+    flex-direction: column;
+    background-color: #1b1f20;
+    opacity: 0.6;
+  }
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* end navigation css */
+
+/* hero css */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-heading {
+  z-index: 10;
+  padding-top: 60px;
+}
+
+#heading {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  font-size: 94px;
+  letter-spacing: 31px;
+  background: -webkit-linear-gradient(270deg, #d4d4d4 50%, #8f8f8f 73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-text {
+  z-index: 10;
+}
+.hero-text p {
+  text-align: center;
+  font-size: 20px;
+  padding: 4px 20px;
+  word-spacing: 2px;
+  font-family: var(--primary-font);
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero-btn {
+  z-index: 10;
+  margin: 65px 0px;
+}
+
+.hero-btn a {
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  background-color: #64a19d;
+  color: #fffcf2;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  box-shadow: 1px 3px 10px 0px black;
+  padding: 1.25rem 2rem;
+}
+
+.hero-btn a:hover{
+  background-color: #80a7a4;
+}
+@media screen and (max-width: 986px) {
+  #heading {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 15px;
+  }
+  .hero-heading {
+    z-index: 10;
+    padding-bottom: 20px;
+  }
+  .hero-text p {
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .hero-btn a {
+    padding: 1rem 1rem;
+  }
+}
+
+/* end hero css */
+
+/* features css */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.features-heading h1 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: 100;
+}
+
+.features-heading {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.features-text {
+  width: 100%;
+  text-align: center;
+  padding: 20px 370px;
+  padding-bottom: 100px;
+}
+.features-text p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+
+.features-image img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.features-image {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: -55px;
+}
+@media screen and (max-width: 986px) {
+  .features-heading h1 {
+    font-size: 1.6rem;
+  }
+
+  .features-text p {
+    font-size: 16px;
+  }
+  .features-text {
+    width: 100%;
+    text-align: center;
+    padding: 20px 13px;
+    padding-bottom: 69px;
+  }
+  .features-image img {
+    max-width: 325px;
+    margin: auto;
+  }
+}
+/* end features css */
+
+/* start projects css */
+.projects {
+  padding: 55px 0px;
+}
+
+.project1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1-left {
+  width: 50%;
+}
+.project1-left img {
+  max-width: 670px;
+}
+
+.project1-right {
+  width: 28%;
+  height: 200px;
+  border-left: 10px solid #64a19d;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  margin: 0px -5px;
+}
+
+.project1-right-heading {
+  font-family: "Varela Round", sans-serif;
+  color: #212530;
+  font-weight: 300;
+  line-height: 45px;
+  font-size: 1.8rem;
+}
+
+.project1-right-description {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.project2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.project2-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project2-left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project2-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000000;
+  height: 481px;
+  align-items: center;
+}
+
+.project2-right-text {
+  padding: 0px 162px;
+}
+.project2-right-heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+.project2-right-desc {
+  color: #5f7874;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 300;
+}
+.project2-right hr {
+  margin-top: 20px;
+  width: 129px;
+  border-color: #64a19d;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.project3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project3-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project3-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.project3-right img {
+  max-width: 100%;
+
+  max-height: 100%;
+}
+
+.project3-left {
+  /* display: flex;
+  justify-content: center;
+  align-items: right;
+  flex-direction: column; */
+  text-align: right;
+  background-color: black;
+  height: 482px;
+}
+
+.project3-left-text {
+  border: 2xp solid yellow;
+  padding: 0px 162px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+
+.project3-left-heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+.project3-left-desc {
+  color: #5f7874;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.project3-left hr {
+  margin-top: 20px;
+  width: 129px;
+  border-color: #64a19d;
+  border-width: 2px;
+  border-style: solid;
+}
+/* end projects css */
+
+/* start signup css */
+
+.signup {
+  padding: 70px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 75%,
+      #000000 100%
+    ),
+    url(./images/bg-signup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.signup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-content svg {
+  margin-bottom: 25px;
+}
+
+.signup-content h2 {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 100;
+  margin-bottom: 40px;
+  word-spacing: 10px;
+  font-size: 32px;
+}
+
+.signup-content input {
+  padding: 1.2rem 20rem;
+  padding-left: 1rem;
+  border-radius: 4px;
+  outline: none;
+  border-style: none;
+  font-family: "Poppins";
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.signup-content button {
+  padding: 19px 34px;
+  border-radius: 4px;
+  outline: none;
+  border-style: none;
+  background-color: #548b87;
+  color: #fff;
+  font-family: var(--primary-font);
+}
+
+.signup-content button:hover{
+  
+  background-color: #80a7a4;
+}
+/* end signup css */
+
+/* start footer css */
+.contact {
+  padding: 71px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.contact-box {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 0.25rem solid #64a19d;
+  border-radius: 5px;
+}
+
+
+
+.contact-box hr {
+  width: 78px;
+  margin: 27px;
+  border-color: #64a19d;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.box-heading {
+  margin-top: 5px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #0c0b0b;
+}
+
+.box-desc {
+  font-size: 12px;
+  font-family: var(--primary-font);
+  font-weight: 300;
+}
+
+.icons {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.icon-logos {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0px 15px;
+  padding-top: 3px;
+  transition: all 0.5s;
+}
+
+.icon-logos:hover{
+  transform: scale(1.1);
+}
+
+.icon-logos a{
+  text-decoration: none;
+
+}
+
+.copyright{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p{
+  color: #fff;
+  font-family:"Varela Round", sans-serif ;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 70px 0px;
+}
+/* end footer css */
